@@ -20,7 +20,7 @@ export default {
   methods: {
     getData: async function () {
       const response = await fetch("http://localhost:3000/login");
-      const data = response.json();
+      const data = await response.json();
       console.log(data);
     },
   },
