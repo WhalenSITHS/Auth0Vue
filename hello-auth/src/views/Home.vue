@@ -19,7 +19,9 @@ export default {
   },
   methods: {
     getData: async function () {
-      await fetch("localhost:3000/login");
+      const response = await fetch("http://localhost:3000/login");
+      const data = response.json();
+      console.log(data);
     },
   },
 };
