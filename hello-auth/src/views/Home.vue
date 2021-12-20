@@ -14,15 +14,13 @@ export default {
   components: {
     HelloWorld,
   },
-  mounted: function () {
-    this.getData();
-  },
+  mounted: function () {},
   methods: {
-    getData: async function () {
+    /*  getData: async function () {
       const response = await fetch("http://localhost:3000/login");
       const data = await response.json();
       console.log(data);
-    },
+    }, */
   },
 };
 </script>
